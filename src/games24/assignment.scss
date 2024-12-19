@@ -1,0 +1,540 @@
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+@mixin disPro($dis,$align,$justify){
+    display: $dis;
+    align-items: $align;
+    justify-content: $justify;
+}
+.container{
+    width: 100%;
+    height: 98vh;
+    background-color: black;
+    @include disPro(flex, center,center);
+    .button-container{
+        @include disPro(flex, center,center);
+        background-color: #ffff;
+        width: 400px;
+        height: 542px;
+        .button{
+            width: 120px;
+            height: 50px;
+            border-radius: 8px;
+            border: 1px solid #035240;
+            background-color: #035240;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            color: #ffff;
+            @include disPro(flex, center,center);
+        }
+        .button:hover{
+            width: 125px;
+            height: 55px;
+            font-size: 14px;
+        }
+    }
+    .box-container{
+        width: 400px;
+        height: 542px;
+        top: 113px;
+        left: 312px;
+        gap: 0px;
+        opacity: 0px;
+        background-color: #ffff;
+        border: 1px solid grey;
+        .child-box-one{
+            @include disPro(flex, center, space-around);
+            gap: 150px;
+            width: 400px;
+            height: 42px;
+            top: 113px;
+            left: 312px;
+            opacity: 0px;
+            background-color: rgba(142, 142, 142, 1);
+            .card-heading{
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 21.09px;
+                color: rgba(255, 255, 255, 1);
+                width: 163px;
+                height: 21px;
+                top: 122px;
+                left: 332px;
+                gap: 0px;
+                opacity: 0px;
+            }
+            .cross-img{
+                background-image: url('../../public/cross.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 22px;
+                height: 20.94px;
+                cursor: pointer;
+            }
+        }
+        .main-box-two{
+            padding: 20px;
+            .label-text-one{
+                width: 47px;
+                height: 15px;
+                gap: 0px;
+                opacity: 0px;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 15.23px;
+                text-align: center;
+                color: #333333;
+            }
+            .label-text-two{
+                width: 74px;
+                height: 30px;
+                gap: 0px;
+                opacity: 0px;
+                font-size: 26px;
+                font-weight: 700;
+                line-height: 30.47px;
+                text-align: center;
+                color: #333333;
+            }
+            .child-box-two{
+                width: 360px;
+                height: 90px;
+                top: 171px;
+                left: 332px;
+                gap: 0px;
+                border: 1px solid rgba(238, 238, 238, 1);
+                border-radius: 8px;
+                opacity: 0px;
+                .child-box-div-one{
+                    @include disPro(flex, center,space-around);
+                    padding: 12.1px 13.5px;
+                    gap: 10px;
+                    .error-icon{
+                        @include disPro(flex, center,center);
+                        width: 16px;
+                        height: 16px;
+                        top: -0px;
+                        gap: 0px;
+                        opacity: 0px;
+                        border-radius: 100%;
+                        border: 1px solid rgba(51, 51, 51, 1);
+                        color: rgba(51, 51, 51, 1);
+                    }
+                    .heading-two{
+                        width: 309px;
+                        height: 28px;
+                        gap: 0px;
+                        opacity: 0px;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 14.06px;
+                        text-align: left;
+                    }
+                }
+                .child-box-div-two{
+                    background: linear-gradient(90deg, #E6F9FF 15.42%, #F3FFE0 93.19%);
+                    border-radius: 0px 0px 8px 8px;
+                    opacity: 0px;
+                    @include disPro(flex, center,flex-start);
+                    padding: 7px 13.5px;
+                    gap: 5px;
+                    .thumb-logo{
+                        width: 24px;
+                        height: 23.26px;
+                        gap: 0px;
+                        opacity: 0px;
+                        background-image: url('../../public/thumb.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                    .heading-three{
+                        width: 275px;
+                        height: 18px;
+                        gap: 0px;
+                        opacity: 0px;
+                        font-size: 15px;
+                        font-weight: 700;
+                        line-height: 17.58px;
+                        text-align: center;
+                        color:rgba(51, 51, 51, 1);
+                    }
+                }
+            }
+            .child-box-three{
+                width: 360px;
+                height: 348px;
+                top: 277px;
+                left: 332px;
+                gap: 0px;
+                border-radius: 8px;
+                opacity: 0px;
+                background-color: #FAFAFA;
+                margin-top: 20px;
+                @include disPro(flex, center,flex-start);
+                flex-direction: column;
+                gap: 20px;
+                border: 1px solid #FAFAFA;
+                .price-label{
+                    width: 34px;
+                    height: 18px;
+                    gap: 0px;
+                    opacity: 0px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 16.41px;
+                    text-align: right;
+                    color: #77AA00;
+                }
+                .details-label{
+                    width: 94px;
+                    height: 13px;
+                    gap: 0px;
+                    opacity: 0px;
+                    font-size: 11px;
+                    font-weight: 400;
+                    line-height: 12.89px;
+                    text-align: left;
+                    color: #333333;
+                }
+                .gst-benefit-header{
+                    width: 360px;
+                    height: 33px;
+                    top: 277px;
+                    left: 332px;
+                    gap: 0px;
+                    border-radius: 8px 8px 0px 0px;
+                    opacity: 0px;
+                    background-image: url('../../public/div\ background.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    @include disPro(flex, center,space-around);
+                    gap: 90px;
+                    .text-one{
+                        width: 142px;
+                        height: 14px;
+                        gap: 0px;
+                        opacity: 0px;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 14.06px;
+                        text-align: left;
+                        color:#333333
+                    }
+                    .text-two{
+                        width: 67px;
+                        height: 18px;
+                        gap: 0px;
+                        opacity: 0px;
+                        font-size: 15px;
+                        font-weight: 700;
+                        line-height: 17.58px;
+                        text-align: left;
+                        color:#77AA00
+                    }
+                }
+                .gst-heading{
+                    width: 324px;
+                    height: 18px;
+                    gap: 0px;
+                    opacity: 0px;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 17.58px;
+                    text-align: center;
+                    color: #333333;
+                }
+                .gst-price-div{
+                @include disPro(flex, center,flex-start);
+                flex-direction: column;
+                gap: 2.66px;
+                .label-text-one{
+                    width: 47px;
+                    height: 15px;
+                    gap: 0px;
+                    opacity: 0px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 15.23px;
+                    text-align: center;
+                    color: #333333;
+                }
+                .label-text-two{
+                    width: 74px;
+                    height: 30px;
+                    gap: 0px;
+                    opacity: 0px;
+                    font-size: 26px;
+                    font-weight: 700;
+                    line-height: 30.47px;
+                    text-align: center;
+                    color: #333333;
+                }
+                .label-text-three{
+                    width: 109px;
+                    height: 13px;
+                    gap: 0px;
+                    opacity: 0px;
+                    font-size: 11px;
+                    font-weight: 500;
+                    line-height: 12.89px;
+                    text-align: center;
+                    color: #747474;
+                }
+                }
+                .gst-breakup-div{
+                    @include disPro(flex, center,space-between);
+                    .left-div,.right-div{
+                        width: 117px;
+                        height: 33px;
+                        top: 472px;
+                        left: 350px;
+                        padding: 8px 12px 8px 12px;
+                        gap: 4px;
+                        border-radius: 8px;
+                        border: 1px solid #CDCDCD;
+                        opacity: 0px;
+                        @include disPro(flex, center,flex-start);
+                        flex-direction: column;
+                    }
+                    .right-div .price-label{
+                        color: #E82217;
+                    }
+                    .right-div .details-label{
+                       width:128px;
+                    }
+                    .center-div{
+                        @include disPro(flex, center,space-between);
+                        .arrow-left{
+                            background-image: url('../../public/arrowLeft.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 16.31px;
+                            height: 15px;
+                            top: 481px;
+                            left: 495.69px;
+                            gap: 0px;
+                            border: 1px 0px 0px 0px;
+                            opacity: 0px;
+                        }
+                        .arrow-center{
+                            background-image: url('../../public/arrowCenter.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 1.4px;
+                            height: 55px;
+                            bottom: 20px;
+                            left: 512px;
+                            gap: 0px;
+                            border: 1px 0px 0px 0px;
+                            opacity: 0px;
+                        }
+                        .arrow-right{
+                            background-image: url('../../public/arrowRight.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 16.31px;
+                            height: 15px;
+                            top: 481px;
+                            left: 528.88px;
+                            gap: 0px;
+                            border: 1px 0px 0px 0px;
+                            opacity: 0px;
+                        }
+                    }
+                }
+                .child-box-four{
+                    @include disPro(flex, flex-start,space-around);
+                    gap: 1px;
+                    .child-box-four-one{
+                        @include disPro(flex, flex-start,flex-start);
+                        flex-direction: column;
+                        background-image: url('../../public/Frame\ 427320998.png');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 209.63px;
+                        top: 546px;
+                        left: 350px;
+                        padding: 10.5px 7.88px 10.5px 7.88px;
+                        gap: 2.63px;
+                        border-radius: 5.25px 0px 0px 0px;
+                        border: 1.31px 0px 0px 0px;
+                        opacity: 0px;
+                        .price-label{
+                            height: 15px;
+                        }
+                        .thumb-logo{
+                            width: 24px;
+                            height: 23.26px;
+                            gap: 0px;
+                            opacity: 0px;
+                            background-image: url('../../public/thumb.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            display: inline;
+                        }
+                        .details-label{
+                            width: 200px;
+                            height: 8px;
+                            font-size: 10px
+                        }
+                    }
+                    .second-child{
+                        @include disPro(flex, center,center);
+                        height: 75.25px;
+                        .child-box-four-two{
+                            background-image: url('../../public/Line\ 906.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 20.75px;
+                            height: 15px;
+                            top: 581px;
+                            left: 562.62px;
+                            gap: 0px;
+                            border: 1px 0px 0px 0px;
+                            opacity: 0px;
+                        }
+                    }
+                    .child-box-four-three{
+                        @include disPro(flex, flex-end,center);
+                        flex-direction: column;
+                        width: 74px;
+                        .label-text-three{
+                            width: 68px;
+                            height: 12px;
+                            gap: 0px;
+                            opacity: 0px;
+                            font-size: 10px;
+                            font-weight: 400;
+                            line-height: 11.72px;
+                            text-align: right;
+                            color: #747474;
+                        }
+                        .label-text-two{
+                            color: #77AA00;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) and (max-height: 780px) {
+    .container{ 
+        width: 360px;
+        margin: 0;
+        padding: 0;
+        .box-container{
+        height: 678px;
+        border-radius: 12px 12px 0px 0px;
+        width: 401px;
+        margin-left: 40px;
+    }}
+    .container .box-container .child-box-one{
+        gap: 0px;
+        justify-content: center;
+        background-color: #ffff;
+        border-radius: 12px 12px 0px 0px;
+        .card-heading{
+            text-align: center;
+            width: 85%;
+            color: #333333;
+            height: 5px;
+        }
+        .cross-img{
+            background-image: url('../../public/Union.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 12.08px;
+            margin-top: 15px;
+            top: 186.67px;
+            left: 340px;
+            gap: 0px;
+            opacity: 0px;
+        }
+    }
+    .container .box-container .main-box-two .child-box-two{
+        width: 340px;
+    }
+    .container .box-container .main-box-two .child-box-two .child-box-div-two .heading-three{
+        font-size: 14px;
+    }
+    .container .box-container .main-box-two{
+        padding-left: 29px;
+    }
+    .container .box-container .main-box-two .child-box-three{
+        width: 340px;
+        height: 488px;
+    }
+     .container .box-container .main-box-two .child-box-three .gst-benefit-header{
+        width: 340px;
+        height: 48px;
+        flex-direction: column;
+        background-image: url('../../public/Rectangle\ 34625221.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        gap: 1px;
+        padding: 6px 0;
+        .text-two{
+            font-size: 14px;
+        }
+    }
+    .container .box-container .main-box-two .child-box-three .gst-breakup-div .left-div,.container .box-container .main-box-two .child-box-three .gst-breakup-div .right-div{
+        width: 110px;
+    }
+    .container .box-container .main-box-two .child-box-three .child-box-four{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        .child-box-four-one{
+            background-image: url('../../public/MobFrame.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 288.63px;
+            height: 71px;
+            .price-label,
+            .thumb-logo,
+            .details-label{
+                display: none;
+            }
+        }
+        .second-child {
+            @include disPro(flex, center,center);
+            height: 15.25px;
+            .child-box-four-two{
+            background-image: url('../../public/DownArrow.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 20.75px;
+            height: 18px;
+            top: 581px;
+            left: 562.62px;
+            gap: 0px;
+            border: 1px 0px 0px 0px;
+            opacity: 0px;
+        }
+        }
+        .child-box-four-three{
+            align-items: center;
+            margin-top: 10px;
+            gap: 4px;
+            .label-text-three{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) and (max-height: 360px) {
+    .container {
+        height: 150vh;
+    }
+}
